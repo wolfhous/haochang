@@ -1,0 +1,96 @@
+//
+//  PrefixHeader.pch
+//  haochang
+//
+//  Created by 壹号商圈 on 16/11/1.
+//  Copyright © 2016年 com.houshuai. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+
+
+
+//自定义View的frame分类
+#import "UIView+ZKBView.h"
+//自定义label分类
+#import "UILabel+HSLabel.h"
+//自定义but分类
+#import "UIButton+HSButton.h"
+//设置圆形图片
+#import "UIImageView+HSRound.h"
+//统一网络接口
+#import "HSHttpRequest.h"
+//提示窗口
+#import "SVProgressHUD.h"
+//MJ解析
+#import "MJExtension.h"
+//MJ下拉刷新
+#import "MJRefresh.h"
+//SD图片缓存
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+//自用工具
+#import "HSManager.h"
+//键盘处理
+#import "IQKeyboardManager.h"
+//自定义navItem
+#import "UIBarButtonItem+HSExtension.h"
+//自动布局
+#import "Masonry.h"
+#import "BlocksKit.h"
+#import "BlocksKit+UIKit.h"
+//防止block块循环引用用weakSelf
+#define  WKSELF __unsafe_unretained typeof(self) weakSelf = self
+//获取屏幕 宽度、高度
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+//可以判断是iphone几
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_RETINA ([[UIScreen mainScreen] scale] >= 2.0)
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+
+#define IS_IPHONE_4_OR_LESS (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0)
+#define IS_IPHONE_5 (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
+#define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
+#define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+//判断设备传入坐标
+#define IPhone4_5_6_6P(a,b,c,d) (CGSizeEqualToSize(CGSizeMake(320, 480), [[UIScreen mainScreen] bounds].size) ?(a) :(CGSizeEqualToSize(CGSizeMake(320, 568), [[UIScreen mainScreen] bounds].size) ? (b) : (CGSizeEqualToSize(CGSizeMake(375, 667), [[UIScreen mainScreen] bounds].size) ?(c) : (CGSizeEqualToSize(CGSizeMake(414, 736), [[UIScreen mainScreen] bounds].size) ?(d) : 0))))
+#define HSparameters NSMutableDictionary *parameters = [NSMutableDictionary dictionary]
+// DEBUG模式,控制输出
+#ifdef DEBUG
+# define DLog(fmt, ...) NSLog((@"[函数名:%s]" "[行号:%d]" fmt),__FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+# define DLog(...);
+#endif
+//打印方法
+#define DLogFunc DLog(@"%s", __func__);
+
+//=======以下两个一定要配合使用======== 解决侧滑返回过度效果（模拟导航栏一起滑动）========
+//添加侧滑截图返回 在willDisappear
+#define HS_POP_willDisappear [self.view addSubview:[[UIImageView alloc]initWithImage:[HSManager hs_captureScreeWithCGRect:CGRectMake(0, 0, SCREEN_WIDTH, 64)]]]
+//移除侧滑截图返回 在didDisappear
+#define HS_POP_didDisappear [self.view.subviews.lastObject removeFromSuperview]
+//=======以上两个一定要配合使用======== 解决侧滑返回过度效果（模拟导航栏一起滑动）========
+
+
+
+/*** 颜色 ***/
+#define HSColorA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define HSColor(r, g, b) HSColorA((r), (g), (b), 255)
+#define HSRandomColor HSColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+#define HSrayColor(v) HSColor((v), (v), (v))
+#define HSCommonBgColor HSrayColor(206)
+//主红色//#F10E44
+#define HSMainColor HSColor(241, 14, 68)
+#define HSMainBlueColor HSColor(50, 96, 204)
+//统一分割线颜色
+#define HSlineColor [UIColor groupTableViewBackgroundColor]
+
+
+
+#endif /* PrefixHeader_pch */
