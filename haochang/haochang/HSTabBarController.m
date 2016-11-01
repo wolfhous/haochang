@@ -9,7 +9,7 @@
 #import "HSTabBarController.h"
 #import "HSTabBar.h"
 #import "HSNavigationController.h"
-#import "HSHomeViewController.h"
+#import "HSMainViewController.h"
 @interface HSTabBarController ()
 
 @end
@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self addChildViewController:[[HSNavigationController alloc]initWithRootViewController:[[HSHomeViewController alloc]init]]];
+    [self addChildViewController:[[HSNavigationController alloc]initWithRootViewController:[[HSMainViewController alloc]init]]];
     [self setValue:[[HSTabBar alloc]init] forKey:@"tabBar"];
 }
 

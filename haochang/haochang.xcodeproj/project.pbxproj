@@ -175,6 +175,7 @@
 		9D80BF791DC87528005B39F1 /* HSHomeTitleBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BF781DC87528005B39F1 /* HSHomeTitleBtn.m */; };
 		9D80BF7F1DC883DD005B39F1 /* HSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BF7E1DC883DD005B39F1 /* HSMeViewController.m */; };
 		9D80BF821DC883F6005B39F1 /* HSDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BF811DC883F6005B39F1 /* HSDiscoverViewController.m */; };
+		9D80BF851DC891F5005B39F1 /* HSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BF841DC891F5005B39F1 /* HSMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -529,6 +530,8 @@
 		9D80BF7E1DC883DD005B39F1 /* HSMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSMeViewController.m; sourceTree = "<group>"; };
 		9D80BF801DC883F6005B39F1 /* HSDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDiscoverViewController.h; sourceTree = "<group>"; };
 		9D80BF811DC883F6005B39F1 /* HSDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDiscoverViewController.m; sourceTree = "<group>"; };
+		9D80BF831DC891F5005B39F1 /* HSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSMainViewController.h; sourceTree = "<group>"; };
+		9D80BF841DC891F5005B39F1 /* HSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -577,6 +580,8 @@
 				9D80BF6F1DC8653D005B39F1 /* HSTabBar.m */,
 				9D80BF401DC838E1005B39F1 /* HSNavigationController.h */,
 				9D80BF411DC838E1005B39F1 /* HSNavigationController.m */,
+				9D80BF831DC891F5005B39F1 /* HSMainViewController.h */,
+				9D80BF841DC891F5005B39F1 /* HSMainViewController.m */,
 				9D80BD1D1DC82F22005B39F1 /* Assets.xcassets */,
 				9D80BD221DC82F22005B39F1 /* Info.plist */,
 				9D80BD111DC82F21005B39F1 /* Supporting Files */,
@@ -1523,6 +1528,7 @@
 				9D80BE9E1DC83287005B39F1 /* NSCache+BlocksKit.m in Sources */,
 				9D80BD131DC82F22005B39F1 /* main.m in Sources */,
 				9D80BF761DC8668E005B39F1 /* HSChatTableViewController.m in Sources */,
+				9D80BF851DC891F5005B39F1 /* HSMainViewController.m in Sources */,
 				9D80BE971DC83287005B39F1 /* NSObject+BKBlockExecution.m in Sources */,
 				9D80BE831DC83287005B39F1 /* AFImageDownloader.m in Sources */,
 				9D80BEB51DC83287005B39F1 /* IQUITextFieldView+Additions.m in Sources */,
