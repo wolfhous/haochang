@@ -13,7 +13,7 @@
 @implementation HSHomeViewController
 
 - (void)viewDidLoad {
-    self.view.backgroundColor = HSRandomColor;
+    self.view.backgroundColor = [UIColor grayColor];
 }
 
 

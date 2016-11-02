@@ -20,10 +20,6 @@ singleton_interface(HSUserSingleton)
 @property (nonatomic,copy) NSString *userPhoto;
 /** 用户id*/
 @property (nonatomic,copy) NSString *uid;
-/** 用户积分*/
-@property (nonatomic,copy) NSString *score;
-/** 用户剩余价钱*/
-@property (nonatomic,copy) NSString *money;
 /** 当前版本，首页赋值*/
 @property (nonatomic,copy)NSString *currentVersion;
 /** 商店版本，首页赋值*/

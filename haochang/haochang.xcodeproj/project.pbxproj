@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D48FA4A1DC9C7AA0000EFAD /* HSMeCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D48FA491DC9C7AA0000EFAD /* HSMeCellModel.m */; };
+		9D48FA4E1DC9E2B00000EFAD /* HSMeTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D48FA4C1DC9E2B00000EFAD /* HSMeTopCell.m */; };
+		9D48FA4F1DC9E2B00000EFAD /* HSMeTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D48FA4D1DC9E2B00000EFAD /* HSMeTopCell.xib */; };
 		9D80BD131DC82F22005B39F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BD121DC82F22005B39F1 /* main.m */; };
 		9D80BD161DC82F22005B39F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BD151DC82F22005B39F1 /* AppDelegate.m */; };
 		9D80BD1E1DC82F22005B39F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D80BD1D1DC82F22005B39F1 /* Assets.xcassets */; };
@@ -179,6 +182,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D48FA481DC9C7AA0000EFAD /* HSMeCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSMeCellModel.h; sourceTree = "<group>"; };
+		9D48FA491DC9C7AA0000EFAD /* HSMeCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSMeCellModel.m; sourceTree = "<group>"; };
+		9D48FA4B1DC9E2B00000EFAD /* HSMeTopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSMeTopCell.h; sourceTree = "<group>"; };
+		9D48FA4C1DC9E2B00000EFAD /* HSMeTopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSMeTopCell.m; sourceTree = "<group>"; };
+		9D48FA4D1DC9E2B00000EFAD /* HSMeTopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSMeTopCell.xib; sourceTree = "<group>"; };
 		9D80BD0E1DC82F21005B39F1 /* haochang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = haochang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D80BD121DC82F22005B39F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9D80BD141DC82F22005B39F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1293,6 +1301,8 @@
 		9D80BF101DC8347A005B39F1 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				9D48FA481DC9C7AA0000EFAD /* HSMeCellModel.h */,
+				9D48FA491DC9C7AA0000EFAD /* HSMeCellModel.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -1300,6 +1310,9 @@
 		9D80BF111DC8347A005B39F1 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				9D48FA4B1DC9E2B00000EFAD /* HSMeTopCell.h */,
+				9D48FA4C1DC9E2B00000EFAD /* HSMeTopCell.m */,
+				9D48FA4D1DC9E2B00000EFAD /* HSMeTopCell.xib */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -1364,6 +1377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D48FA4F1DC9E2B00000EFAD /* HSMeTopCell.xib in Resources */,
 				9D80BECE1DC83288005B39F1 /* Info.plist in Resources */,
 				9D80BD1E1DC82F22005B39F1 /* Assets.xcassets in Resources */,
 				9D80BEC11DC83288005B39F1 /* IQKeyboardManager.bundle in Resources */,
@@ -1446,6 +1460,7 @@
 				9D80BED51DC83288005B39F1 /* NSObject+MJCoding.m in Sources */,
 				9D80BE921DC83287005B39F1 /* NSMutableIndexSet+BlocksKit.m in Sources */,
 				9D80BEBC1DC83287005B39F1 /* IQBarButtonItem.m in Sources */,
+				9D48FA4E1DC9E2B00000EFAD /* HSMeTopCell.m in Sources */,
 				9D80BEA51DC83287005B39F1 /* QLPreviewController+BlocksKit.m in Sources */,
 				9D80BF001DC83288005B39F1 /* UIImage+WebP.m in Sources */,
 				9D80BE9D1DC83287005B39F1 /* A2DynamicDelegate.m in Sources */,
@@ -1518,6 +1533,7 @@
 				9D80BE811DC83287005B39F1 /* README.md in Sources */,
 				9D80BE841DC83287005B39F1 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				9D80BF2B1DC834D2005B39F1 /* UIBarButtonItem+HSExtension.m in Sources */,
+				9D48FA4A1DC9C7AA0000EFAD /* HSMeCellModel.m in Sources */,
 				9D80BEAA1DC83287005B39F1 /* UIGestureRecognizer+BlocksKit.m in Sources */,
 				9D80BEC41DC83288005B39F1 /* MASCompositeConstraint.m in Sources */,
 				9D80BEB91DC83287005B39F1 /* IQKeyboardManager.m in Sources */,
@@ -1686,6 +1702,7 @@
 				9D80BD271DC82F22005B39F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

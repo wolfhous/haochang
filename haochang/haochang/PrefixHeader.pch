@@ -42,6 +42,8 @@
 #import "Masonry.h"
 #import "BlocksKit.h"
 #import "BlocksKit+UIKit.h"
+//用户数据单例
+#import "HSUserSingleton.h"
 //防止block块循环引用用weakSelf
 #define  WKSELF __unsafe_unretained typeof(self) weakSelf = self
 //获取屏幕 宽度、高度
