@@ -38,6 +38,7 @@
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:@"homepage_record_32x32_" highImage:@"homepage_record_32x32_" target:self action:@selector(clickHomeNavBarRightItem)];
     
     UIView *titleView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 200, 44)];
+    self.titleView = titleView;
     self.navigationItem.titleView = titleView;
     
     CGFloat w = titleView.xmg_width/self.titleArray.count;
