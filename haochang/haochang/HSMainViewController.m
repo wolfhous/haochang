@@ -108,6 +108,7 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     //设置滚动视图
     UIScrollView * scrollView = [[UIScrollView alloc]initWithFrame:self.view.bounds];
+    scrollView.showsHorizontalScrollIndicator = NO;
     scrollView.delegate = self;
     scrollView.contentSize = CGSizeMake(SCREEN_WIDTH * self.titleArray.count, SCREEN_HEIGHT);
     scrollView.pagingEnabled = YES;
@@ -165,7 +166,7 @@
 -(NSArray *)titleArray{
     if (!_titleArray) {
         _titleArray = [NSArray array];
-        _titleArray = @[@"aaa",@"bfef",@"cerrff"];
+        _titleArray = @[@"首页",@"发现",@"我的"];
     }
     return _titleArray;
 }
