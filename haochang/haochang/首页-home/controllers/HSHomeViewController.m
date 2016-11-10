@@ -14,7 +14,14 @@
 
 - (void)viewDidLoad {
     self.view.backgroundColor = [UIColor grayColor];
+    [self lodaHomeData];
 }
-
+-(void)lodaHomeData{
+    [HSHttpRequest hs_getAPIName:API_Home parameters:nil succes:^(id dic) {
+        DLog(@"%@",dic);
+    } error:^(id error) {
+        
+    }];
+}
 
 @end

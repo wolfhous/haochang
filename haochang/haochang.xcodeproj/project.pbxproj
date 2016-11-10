@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D482CB11DD4705D00419D18 /* HSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D482CAA1DD4705D00419D18 /* HSMainViewController.m */; };
+		9D482CB21DD4705D00419D18 /* HSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D482CAC1DD4705D00419D18 /* HSNavigationController.m */; };
+		9D482CB31DD4705D00419D18 /* HSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D482CAE1DD4705D00419D18 /* HSTabBar.m */; };
+		9D482CB41DD4705D00419D18 /* HSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D482CB01DD4705D00419D18 /* HSTabBarController.m */; };
 		9D48FA4A1DC9C7AA0000EFAD /* HSMeCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D48FA491DC9C7AA0000EFAD /* HSMeCellModel.m */; };
 		9D48FA4E1DC9E2B00000EFAD /* HSMeTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D48FA4C1DC9E2B00000EFAD /* HSMeTopCell.m */; };
 		9D48FA4F1DC9E2B00000EFAD /* HSMeTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D48FA4D1DC9E2B00000EFAD /* HSMeTopCell.xib */; };
@@ -171,17 +175,22 @@
 		9D80BF3A1DC835F1005B39F1 /* HSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BF361DC835F1005B39F1 /* HSManager.m */; };
 		9D80BF3B1DC835F1005B39F1 /* HSUserSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BF381DC835F1005B39F1 /* HSUserSingleton.m */; };
 		9D80BF3F1DC838BC005B39F1 /* HSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BF3E1DC838BC005B39F1 /* HSHomeViewController.m */; };
-		9D80BF421DC838E1005B39F1 /* HSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BF411DC838E1005B39F1 /* HSNavigationController.m */; };
-		9D80BF701DC8653D005B39F1 /* HSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BF6F1DC8653D005B39F1 /* HSTabBar.m */; };
-		9D80BF731DC8655A005B39F1 /* HSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BF721DC8655A005B39F1 /* HSTabBarController.m */; };
 		9D80BF761DC8668E005B39F1 /* HSChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BF751DC8668E005B39F1 /* HSChatTableViewController.m */; };
 		9D80BF791DC87528005B39F1 /* HSHomeTitleBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BF781DC87528005B39F1 /* HSHomeTitleBtn.m */; };
 		9D80BF7F1DC883DD005B39F1 /* HSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BF7E1DC883DD005B39F1 /* HSMeViewController.m */; };
 		9D80BF821DC883F6005B39F1 /* HSDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BF811DC883F6005B39F1 /* HSDiscoverViewController.m */; };
-		9D80BF851DC891F5005B39F1 /* HSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BF841DC891F5005B39F1 /* HSMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D482CA71DD4602A00419D18 /* APIHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIHeader.h; sourceTree = "<group>"; };
+		9D482CA91DD4705D00419D18 /* HSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSMainViewController.h; sourceTree = "<group>"; };
+		9D482CAA1DD4705D00419D18 /* HSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSMainViewController.m; sourceTree = "<group>"; };
+		9D482CAB1DD4705D00419D18 /* HSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSNavigationController.h; sourceTree = "<group>"; };
+		9D482CAC1DD4705D00419D18 /* HSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSNavigationController.m; sourceTree = "<group>"; };
+		9D482CAD1DD4705D00419D18 /* HSTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSTabBar.h; sourceTree = "<group>"; };
+		9D482CAE1DD4705D00419D18 /* HSTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSTabBar.m; sourceTree = "<group>"; };
+		9D482CAF1DD4705D00419D18 /* HSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSTabBarController.h; sourceTree = "<group>"; };
+		9D482CB01DD4705D00419D18 /* HSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSTabBarController.m; sourceTree = "<group>"; };
 		9D48FA481DC9C7AA0000EFAD /* HSMeCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSMeCellModel.h; sourceTree = "<group>"; };
 		9D48FA491DC9C7AA0000EFAD /* HSMeCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSMeCellModel.m; sourceTree = "<group>"; };
 		9D48FA4B1DC9E2B00000EFAD /* HSMeTopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSMeTopCell.h; sourceTree = "<group>"; };
@@ -524,12 +533,6 @@
 		9D80BF3C1DC83610005B39F1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9D80BF3D1DC838BC005B39F1 /* HSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSHomeViewController.h; sourceTree = "<group>"; };
 		9D80BF3E1DC838BC005B39F1 /* HSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSHomeViewController.m; sourceTree = "<group>"; };
-		9D80BF401DC838E1005B39F1 /* HSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSNavigationController.h; sourceTree = "<group>"; };
-		9D80BF411DC838E1005B39F1 /* HSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSNavigationController.m; sourceTree = "<group>"; };
-		9D80BF6E1DC8653D005B39F1 /* HSTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSTabBar.h; sourceTree = "<group>"; };
-		9D80BF6F1DC8653D005B39F1 /* HSTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSTabBar.m; sourceTree = "<group>"; };
-		9D80BF711DC8655A005B39F1 /* HSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSTabBarController.h; sourceTree = "<group>"; };
-		9D80BF721DC8655A005B39F1 /* HSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSTabBarController.m; sourceTree = "<group>"; };
 		9D80BF741DC8668E005B39F1 /* HSChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSChatTableViewController.h; sourceTree = "<group>"; };
 		9D80BF751DC8668E005B39F1 /* HSChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSChatTableViewController.m; sourceTree = "<group>"; };
 		9D80BF771DC87528005B39F1 /* HSHomeTitleBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSHomeTitleBtn.h; sourceTree = "<group>"; };
@@ -538,8 +541,6 @@
 		9D80BF7E1DC883DD005B39F1 /* HSMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSMeViewController.m; sourceTree = "<group>"; };
 		9D80BF801DC883F6005B39F1 /* HSDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSDiscoverViewController.h; sourceTree = "<group>"; };
 		9D80BF811DC883F6005B39F1 /* HSDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDiscoverViewController.m; sourceTree = "<group>"; };
-		9D80BF831DC891F5005B39F1 /* HSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSMainViewController.h; sourceTree = "<group>"; };
-		9D80BF841DC891F5005B39F1 /* HSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -553,6 +554,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D482CA81DD4705D00419D18 /* 主文件-main */ = {
+			isa = PBXGroup;
+			children = (
+				9D482CA91DD4705D00419D18 /* HSMainViewController.h */,
+				9D482CAA1DD4705D00419D18 /* HSMainViewController.m */,
+				9D482CAB1DD4705D00419D18 /* HSNavigationController.h */,
+				9D482CAC1DD4705D00419D18 /* HSNavigationController.m */,
+				9D482CAD1DD4705D00419D18 /* HSTabBar.h */,
+				9D482CAE1DD4705D00419D18 /* HSTabBar.m */,
+				9D482CAF1DD4705D00419D18 /* HSTabBarController.h */,
+				9D482CB01DD4705D00419D18 /* HSTabBarController.m */,
+			);
+			path = "主文件-main";
+			sourceTree = "<group>";
+		};
 		9D80BD051DC82F21005B39F1 = {
 			isa = PBXGroup;
 			children = (
@@ -572,6 +588,7 @@
 		9D80BD101DC82F21005B39F1 /* haochang */ = {
 			isa = PBXGroup;
 			children = (
+				9D482CA81DD4705D00419D18 /* 主文件-main */,
 				9D80BD2D1DC831ED005B39F1 /* 首页-home */,
 				9D80BD281DC831ED005B39F1 /* 发现-discover */,
 				9D80BD2E1DC831ED005B39F1 /* 我-me */,
@@ -582,14 +599,6 @@
 				9D80BD141DC82F22005B39F1 /* AppDelegate.h */,
 				9D80BD151DC82F22005B39F1 /* AppDelegate.m */,
 				9D80BF3C1DC83610005B39F1 /* PrefixHeader.pch */,
-				9D80BF711DC8655A005B39F1 /* HSTabBarController.h */,
-				9D80BF721DC8655A005B39F1 /* HSTabBarController.m */,
-				9D80BF6E1DC8653D005B39F1 /* HSTabBar.h */,
-				9D80BF6F1DC8653D005B39F1 /* HSTabBar.m */,
-				9D80BF401DC838E1005B39F1 /* HSNavigationController.h */,
-				9D80BF411DC838E1005B39F1 /* HSNavigationController.m */,
-				9D80BF831DC891F5005B39F1 /* HSMainViewController.h */,
-				9D80BF841DC891F5005B39F1 /* HSMainViewController.m */,
 				9D80BD1D1DC82F22005B39F1 /* Assets.xcassets */,
 				9D80BD221DC82F22005B39F1 /* Info.plist */,
 				9D80BD111DC82F21005B39F1 /* Supporting Files */,
@@ -645,6 +654,7 @@
 			children = (
 				9D80BF331DC835F1005B39F1 /* HSHttpRequest.h */,
 				9D80BF341DC835F1005B39F1 /* HSHttpRequest.m */,
+				9D482CA71DD4602A00419D18 /* APIHeader.h */,
 				9D80BF351DC835F1005B39F1 /* HSManager.h */,
 				9D80BF361DC835F1005B39F1 /* HSManager.m */,
 				9D80BF371DC835F1005B39F1 /* HSUserSingleton.h */,
@@ -1412,7 +1422,6 @@
 				9D80BE7A1DC83287005B39F1 /* AFHTTPSessionManager.m in Sources */,
 				9D80BEF71DC83288005B39F1 /* SDWebImageCompat.m in Sources */,
 				9D80BE8A1DC83287005B39F1 /* UIWebView+AFNetworking.m in Sources */,
-				9D80BF701DC8653D005B39F1 /* HSTabBar.m in Sources */,
 				9D80BEF51DC83288005B39F1 /* NSData+ImageContentType.m in Sources */,
 				9D80BE8C1DC83287005B39F1 /* NSDictionary+BlocksKit.m in Sources */,
 				9D80BEB31DC83287005B39F1 /* IQNSArray+Sort.m in Sources */,
@@ -1445,6 +1454,7 @@
 				9D80BEB01DC83287005B39F1 /* UIView+BlocksKit.m in Sources */,
 				9D80BE861DC83287005B39F1 /* UIButton+AFNetworking.m in Sources */,
 				9D80BEAF1DC83287005B39F1 /* UITextView+BlocksKit.m in Sources */,
+				9D482CB11DD4705D00419D18 /* HSMainViewController.m in Sources */,
 				9D80BECB1DC83288005B39F1 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				9D80BE9A1DC83287005B39F1 /* NSSet+BlocksKit.m in Sources */,
 				9D80BF161DC834AA005B39F1 /* Foundation+Log.m in Sources */,
@@ -1456,11 +1466,11 @@
 				9D80BEC71DC83288005B39F1 /* MASLayoutConstraint.m in Sources */,
 				9D80BEA81DC83287005B39F1 /* UIBarButtonItem+BlocksKit.m in Sources */,
 				9D80BF7F1DC883DD005B39F1 /* HSMeViewController.m in Sources */,
-				9D80BF731DC8655A005B39F1 /* HSTabBarController.m in Sources */,
 				9D80BED51DC83288005B39F1 /* NSObject+MJCoding.m in Sources */,
 				9D80BE921DC83287005B39F1 /* NSMutableIndexSet+BlocksKit.m in Sources */,
 				9D80BEBC1DC83287005B39F1 /* IQBarButtonItem.m in Sources */,
 				9D48FA4E1DC9E2B00000EFAD /* HSMeTopCell.m in Sources */,
+				9D482CB31DD4705D00419D18 /* HSTabBar.m in Sources */,
 				9D80BEA51DC83287005B39F1 /* QLPreviewController+BlocksKit.m in Sources */,
 				9D80BF001DC83288005B39F1 /* UIImage+WebP.m in Sources */,
 				9D80BE9D1DC83287005B39F1 /* A2DynamicDelegate.m in Sources */,
@@ -1476,7 +1486,6 @@
 				9D80BEBB1DC83287005B39F1 /* IQTextView.m in Sources */,
 				9D80BEB81DC83287005B39F1 /* IQUIWindow+Hierarchy.m in Sources */,
 				9D80BF821DC883F6005B39F1 /* HSDiscoverViewController.m in Sources */,
-				9D80BF421DC838E1005B39F1 /* HSNavigationController.m in Sources */,
 				9D80BF311DC834D2005B39F1 /* UITextField+HSTextField.m in Sources */,
 				9D80BEFB1DC83288005B39F1 /* SDWebImageManager.m in Sources */,
 				9D80BD161DC82F22005B39F1 /* AppDelegate.m in Sources */,
@@ -1500,12 +1509,14 @@
 				9D80BEEF1DC83288005B39F1 /* TADotView.m in Sources */,
 				9D80BEE11DC83288005B39F1 /* MJRefreshBackGifFooter.m in Sources */,
 				9D80BF071DC83288005B39F1 /* SVProgressHUD.m in Sources */,
+				9D482CB21DD4705D00419D18 /* HSNavigationController.m in Sources */,
 				9D80BEE51DC83288005B39F1 /* MJRefreshNormalHeader.m in Sources */,
 				9D80BE941DC83287005B39F1 /* NSMutableSet+BlocksKit.m in Sources */,
 				9D80BEFC1DC83288005B39F1 /* SDWebImagePrefetcher.m in Sources */,
 				9D80BEA61DC83287005B39F1 /* UIActionSheet+BlocksKit.m in Sources */,
 				9D80BED61DC83288005B39F1 /* NSObject+MJKeyValue.m in Sources */,
 				9D80BEDB1DC83288005B39F1 /* MJRefreshComponent.m in Sources */,
+				9D482CB41DD4705D00419D18 /* HSTabBarController.m in Sources */,
 				9D80BEED1DC83288005B39F1 /* TAAbstractDotView.m in Sources */,
 				9D80BF171DC834AA005B39F1 /* Reachability.m in Sources */,
 				9D80BE7D1DC83287005B39F1 /* AFURLRequestSerialization.m in Sources */,
@@ -1544,7 +1555,6 @@
 				9D80BE9E1DC83287005B39F1 /* NSCache+BlocksKit.m in Sources */,
 				9D80BD131DC82F22005B39F1 /* main.m in Sources */,
 				9D80BF761DC8668E005B39F1 /* HSChatTableViewController.m in Sources */,
-				9D80BF851DC891F5005B39F1 /* HSMainViewController.m in Sources */,
 				9D80BE971DC83287005B39F1 /* NSObject+BKBlockExecution.m in Sources */,
 				9D80BE831DC83287005B39F1 /* AFImageDownloader.m in Sources */,
 				9D80BEB51DC83287005B39F1 /* IQUITextFieldView+Additions.m in Sources */,
