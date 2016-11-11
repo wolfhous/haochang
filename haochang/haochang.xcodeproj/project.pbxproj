@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8796F8661DD5FEFB00FD0D49 /* HSRegionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8796F8651DD5FEFB00FD0D49 /* HSRegionViewController.m */; };
+		8796F8691DD5FF1200FD0D49 /* HSSongFreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8796F8681DD5FF1200FD0D49 /* HSSongFreshViewController.m */; };
+		8796F8721DD6041400FD0D49 /* HSUserSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8796F8711DD6041400FD0D49 /* HSUserSingleton.m */; };
+		8796F8741DD609D800FD0D49 /* API_HomeRegion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8796F8731DD609D800FD0D49 /* API_HomeRegion.plist */; };
+		8796F8771DD60DBA00FD0D49 /* HSRegionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8796F8761DD60DBA00FD0D49 /* HSRegionsViewController.m */; };
+		8796F87B1DD60DE400FD0D49 /* HSRegionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8796F8791DD60DE300FD0D49 /* HSRegionsCell.m */; };
+		8796F87C1DD60DE400FD0D49 /* HSRegionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8796F87A1DD60DE300FD0D49 /* HSRegionsCell.xib */; };
+		8796F87E1DD6175200FD0D49 /* API_HomeRegions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8796F87D1DD6175200FD0D49 /* API_HomeRegions.plist */; };
+		8796F8811DD6187B00FD0D49 /* HSHomeRegionsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8796F8801DD6187B00FD0D49 /* HSHomeRegionsModel.m */; };
+		8796F8831DD62A2800FD0D49 /* API_HomeSongFresh.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8796F8821DD62A2800FD0D49 /* API_HomeSongFresh.plist */; };
+		8796F8861DD62ECE00FD0D49 /* HSWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8796F8851DD62ECE00FD0D49 /* HSWebViewController.m */; };
 		87D13E631DD4A8E900171ED3 /* HSHomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D13E611DD4A8E900171ED3 /* HSHomeCollectionViewCell.m */; };
 		87D13E641DD4A8E900171ED3 /* HSHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87D13E621DD4A8E900171ED3 /* HSHomeCollectionViewCell.xib */; };
 		87D13E6A1DD4B47B00171ED3 /* HSHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D13E691DD4B47B00171ED3 /* HSHomeHeaderView.m */; };
@@ -181,7 +192,6 @@
 		9D80BF321DC834D2005B39F1 /* UIView+ZKBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BF291DC834D2005B39F1 /* UIView+ZKBView.m */; };
 		9D80BF391DC835F1005B39F1 /* HSHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BF341DC835F1005B39F1 /* HSHttpRequest.m */; };
 		9D80BF3A1DC835F1005B39F1 /* HSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BF361DC835F1005B39F1 /* HSManager.m */; };
-		9D80BF3B1DC835F1005B39F1 /* HSUserSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BF381DC835F1005B39F1 /* HSUserSingleton.m */; };
 		9D80BF3F1DC838BC005B39F1 /* HSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BF3E1DC838BC005B39F1 /* HSHomeViewController.m */; };
 		9D80BF761DC8668E005B39F1 /* HSChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BF751DC8668E005B39F1 /* HSChatTableViewController.m */; };
 		9D80BF791DC87528005B39F1 /* HSHomeTitleBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BF781DC87528005B39F1 /* HSHomeTitleBtn.m */; };
@@ -190,6 +200,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8796F8641DD5FEFB00FD0D49 /* HSRegionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSRegionViewController.h; sourceTree = "<group>"; };
+		8796F8651DD5FEFB00FD0D49 /* HSRegionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSRegionViewController.m; sourceTree = "<group>"; };
+		8796F8671DD5FF1200FD0D49 /* HSSongFreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSSongFreshViewController.h; sourceTree = "<group>"; };
+		8796F8681DD5FF1200FD0D49 /* HSSongFreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSSongFreshViewController.m; sourceTree = "<group>"; };
+		8796F8701DD6041400FD0D49 /* HSUserSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSUserSingleton.h; sourceTree = "<group>"; };
+		8796F8711DD6041400FD0D49 /* HSUserSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSUserSingleton.m; sourceTree = "<group>"; };
+		8796F8731DD609D800FD0D49 /* API_HomeRegion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = API_HomeRegion.plist; sourceTree = "<group>"; };
+		8796F8751DD60DBA00FD0D49 /* HSRegionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSRegionsViewController.h; sourceTree = "<group>"; };
+		8796F8761DD60DBA00FD0D49 /* HSRegionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSRegionsViewController.m; sourceTree = "<group>"; };
+		8796F8781DD60DE300FD0D49 /* HSRegionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSRegionsCell.h; sourceTree = "<group>"; };
+		8796F8791DD60DE300FD0D49 /* HSRegionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSRegionsCell.m; sourceTree = "<group>"; };
+		8796F87A1DD60DE300FD0D49 /* HSRegionsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSRegionsCell.xib; sourceTree = "<group>"; };
+		8796F87D1DD6175200FD0D49 /* API_HomeRegions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = API_HomeRegions.plist; sourceTree = "<group>"; };
+		8796F87F1DD6187B00FD0D49 /* HSHomeRegionsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSHomeRegionsModel.h; sourceTree = "<group>"; };
+		8796F8801DD6187B00FD0D49 /* HSHomeRegionsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSHomeRegionsModel.m; sourceTree = "<group>"; };
+		8796F8821DD62A2800FD0D49 /* API_HomeSongFresh.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = API_HomeSongFresh.plist; sourceTree = "<group>"; };
+		8796F8841DD62ECE00FD0D49 /* HSWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSWebViewController.h; sourceTree = "<group>"; };
+		8796F8851DD62ECE00FD0D49 /* HSWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSWebViewController.m; sourceTree = "<group>"; };
 		87D13E601DD4A8E900171ED3 /* HSHomeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSHomeCollectionViewCell.h; sourceTree = "<group>"; };
 		87D13E611DD4A8E900171ED3 /* HSHomeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSHomeCollectionViewCell.m; sourceTree = "<group>"; };
 		87D13E621DD4A8E900171ED3 /* HSHomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSHomeCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -549,8 +577,6 @@
 		9D80BF341DC835F1005B39F1 /* HSHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSHttpRequest.m; sourceTree = "<group>"; };
 		9D80BF351DC835F1005B39F1 /* HSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSManager.h; sourceTree = "<group>"; };
 		9D80BF361DC835F1005B39F1 /* HSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSManager.m; sourceTree = "<group>"; };
-		9D80BF371DC835F1005B39F1 /* HSUserSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSUserSingleton.h; sourceTree = "<group>"; };
-		9D80BF381DC835F1005B39F1 /* HSUserSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSUserSingleton.m; sourceTree = "<group>"; };
 		9D80BF3C1DC83610005B39F1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9D80BF3D1DC838BC005B39F1 /* HSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSHomeViewController.h; sourceTree = "<group>"; };
 		9D80BF3E1DC838BC005B39F1 /* HSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSHomeViewController.m; sourceTree = "<group>"; };
@@ -593,6 +619,9 @@
 		9D53156D1DD5A46400FFAA20 /* 数据-plist */ = {
 			isa = PBXGroup;
 			children = (
+				8796F8821DD62A2800FD0D49 /* API_HomeSongFresh.plist */,
+				8796F87D1DD6175200FD0D49 /* API_HomeRegions.plist */,
+				8796F8731DD609D800FD0D49 /* API_HomeRegion.plist */,
 				9D53156E1DD5A46400FFAA20 /* home.plist */,
 				9D53156F1DD5A46400FFAA20 /* home_ad.plist */,
 			);
@@ -683,13 +712,13 @@
 		9D80BD2A1DC831ED005B39F1 /* 工具-tool */ = {
 			isa = PBXGroup;
 			children = (
+				8796F8701DD6041400FD0D49 /* HSUserSingleton.h */,
+				8796F8711DD6041400FD0D49 /* HSUserSingleton.m */,
 				9D80BF331DC835F1005B39F1 /* HSHttpRequest.h */,
 				9D80BF341DC835F1005B39F1 /* HSHttpRequest.m */,
 				9D482CA71DD4602A00419D18 /* APIHeader.h */,
 				9D80BF351DC835F1005B39F1 /* HSManager.h */,
 				9D80BF361DC835F1005B39F1 /* HSManager.m */,
-				9D80BF371DC835F1005B39F1 /* HSUserSingleton.h */,
-				9D80BF381DC835F1005B39F1 /* HSUserSingleton.m */,
 			);
 			path = "工具-tool";
 			sourceTree = "<group>";
@@ -1287,6 +1316,14 @@
 				9D80BF3E1DC838BC005B39F1 /* HSHomeViewController.m */,
 				9D80BF741DC8668E005B39F1 /* HSChatTableViewController.h */,
 				9D80BF751DC8668E005B39F1 /* HSChatTableViewController.m */,
+				8796F8641DD5FEFB00FD0D49 /* HSRegionViewController.h */,
+				8796F8651DD5FEFB00FD0D49 /* HSRegionViewController.m */,
+				8796F8751DD60DBA00FD0D49 /* HSRegionsViewController.h */,
+				8796F8761DD60DBA00FD0D49 /* HSRegionsViewController.m */,
+				8796F8671DD5FF1200FD0D49 /* HSSongFreshViewController.h */,
+				8796F8681DD5FF1200FD0D49 /* HSSongFreshViewController.m */,
+				8796F8841DD62ECE00FD0D49 /* HSWebViewController.h */,
+				8796F8851DD62ECE00FD0D49 /* HSWebViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -1298,6 +1335,8 @@
 				9D5315681DD5619200FFAA20 /* HSHomeCellModel.m */,
 				9D53156A1DD5A11900FFAA20 /* HSHomeAdModel.h */,
 				9D53156B1DD5A11900FFAA20 /* HSHomeAdModel.m */,
+				8796F87F1DD6187B00FD0D49 /* HSHomeRegionsModel.h */,
+				8796F8801DD6187B00FD0D49 /* HSHomeRegionsModel.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -1314,6 +1353,9 @@
 				87D13E691DD4B47B00171ED3 /* HSHomeHeaderView.m */,
 				9D5315721DD5A5DE00FFAA20 /* HSHomeBtn.h */,
 				9D5315731DD5A5DE00FFAA20 /* HSHomeBtn.m */,
+				8796F8781DD60DE300FD0D49 /* HSRegionsCell.h */,
+				8796F8791DD60DE300FD0D49 /* HSRegionsCell.m */,
+				8796F87A1DD60DE300FD0D49 /* HSRegionsCell.xib */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -1431,9 +1473,13 @@
 			files = (
 				9D5315711DD5A46400FFAA20 /* home_ad.plist in Resources */,
 				9D48FA4F1DC9E2B00000EFAD /* HSMeTopCell.xib in Resources */,
+				8796F8831DD62A2800FD0D49 /* API_HomeSongFresh.plist in Resources */,
 				9D80BECE1DC83288005B39F1 /* Info.plist in Resources */,
+				8796F87E1DD6175200FD0D49 /* API_HomeRegions.plist in Resources */,
 				9D80BD1E1DC82F22005B39F1 /* Assets.xcassets in Resources */,
+				8796F87C1DD60DE400FD0D49 /* HSRegionsCell.xib in Resources */,
 				9D80BEC11DC83288005B39F1 /* IQKeyboardManager.bundle in Resources */,
+				8796F8741DD609D800FD0D49 /* API_HomeRegion.plist in Resources */,
 				87D13E641DD4A8E900171ED3 /* HSHomeCollectionViewCell.xib in Resources */,
 				9D80BE801DC83287005B39F1 /* LICENSE in Resources */,
 				9D5315701DD5A46400FFAA20 /* home.plist in Resources */,
@@ -1462,6 +1508,7 @@
 				9D80BF2C1DC834D2005B39F1 /* UIButton+HSButton.m in Sources */,
 				9D80BF3A1DC835F1005B39F1 /* HSManager.m in Sources */,
 				9D80BF011DC83288005B39F1 /* UIImageView+HighlightedWebCache.m in Sources */,
+				8796F8771DD60DBA00FD0D49 /* HSRegionsViewController.m in Sources */,
 				9D80BECD1DC83288005B39F1 /* ViewController+MASAdditions.m in Sources */,
 				9D80BEF31DC83288005B39F1 /* UIView+SDExtension.m in Sources */,
 				9D80BE7A1DC83287005B39F1 /* AFHTTPSessionManager.m in Sources */,
@@ -1478,7 +1525,6 @@
 				9D80BEEA1DC83288005B39F1 /* UIScrollView+MJExtension.m in Sources */,
 				9D80BEE01DC83288005B39F1 /* MJRefreshAutoStateFooter.m in Sources */,
 				9D80BF041DC83288005B39F1 /* SVIndefiniteAnimatedView.m in Sources */,
-				9D80BF3B1DC835F1005B39F1 /* HSUserSingleton.m in Sources */,
 				9D80BF391DC835F1005B39F1 /* HSHttpRequest.m in Sources */,
 				9D80BECA1DC83288005B39F1 /* NSArray+MASAdditions.m in Sources */,
 				9D80BEEC1DC83288005B39F1 /* UIView+MJExtension.m in Sources */,
@@ -1491,10 +1537,12 @@
 				9D80BEB61DC83287005B39F1 /* IQUIView+Hierarchy.m in Sources */,
 				9D80BF791DC87528005B39F1 /* HSHomeTitleBtn.m in Sources */,
 				9D80BEAE1DC83287005B39F1 /* UITextField+BlocksKit.m in Sources */,
+				8796F87B1DD60DE400FD0D49 /* HSRegionsCell.m in Sources */,
 				9D80BE9C1DC83287005B39F1 /* A2BlockInvocation.m in Sources */,
 				9D80BF081DC83288005B39F1 /* SVRadialGradientLayer.m in Sources */,
 				9D80BEDD1DC83288005B39F1 /* MJRefreshHeader.m in Sources */,
 				9D80BEA31DC83287005B39F1 /* MFMailComposeViewController+BlocksKit.m in Sources */,
+				8796F8721DD6041400FD0D49 /* HSUserSingleton.m in Sources */,
 				9D80BEAB1DC83287005B39F1 /* UIImage+BlocksKit.m in Sources */,
 				9D80BE8D1DC83287005B39F1 /* NSIndexSet+BlocksKit.m in Sources */,
 				9D80BEBD1DC83287005B39F1 /* IQPreviousNextView.m in Sources */,
@@ -1503,6 +1551,7 @@
 				9D80BEAF1DC83287005B39F1 /* UITextView+BlocksKit.m in Sources */,
 				9D482CB11DD4705D00419D18 /* HSMainViewController.m in Sources */,
 				9D80BECB1DC83288005B39F1 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				8796F8661DD5FEFB00FD0D49 /* HSRegionViewController.m in Sources */,
 				9D80BE9A1DC83287005B39F1 /* NSSet+BlocksKit.m in Sources */,
 				9D80BF161DC834AA005B39F1 /* Foundation+Log.m in Sources */,
 				9D80BED91DC83288005B39F1 /* MJRefreshAutoFooter.m in Sources */,
@@ -1551,6 +1600,7 @@
 				9D80BEE21DC83288005B39F1 /* MJRefreshBackNormalFooter.m in Sources */,
 				9D80BE891DC83287005B39F1 /* UIRefreshControl+AFNetworking.m in Sources */,
 				9D80BE9B1DC83287005B39F1 /* NSTimer+BlocksKit.m in Sources */,
+				8796F8811DD6187B00FD0D49 /* HSHomeRegionsModel.m in Sources */,
 				9D80BEDA1DC83288005B39F1 /* MJRefreshBackFooter.m in Sources */,
 				9D80BEE31DC83288005B39F1 /* MJRefreshBackStateFooter.m in Sources */,
 				9D80BEB11DC83287005B39F1 /* UIWebView+BlocksKit.m in Sources */,
@@ -1583,11 +1633,13 @@
 				9D80BEB21DC83287005B39F1 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				9D80BE8F1DC83287005B39F1 /* NSMapTable+BlocksKit.m in Sources */,
 				9D80BEAD1DC83287005B39F1 /* UIPopoverController+BlocksKit.m in Sources */,
+				8796F8861DD62ECE00FD0D49 /* HSWebViewController.m in Sources */,
 				9D80BEEE1DC83288005B39F1 /* TAAnimatedDotView.m in Sources */,
 				9D80BE901DC83287005B39F1 /* NSMutableArray+BlocksKit.m in Sources */,
 				9D80BEE81DC83288005B39F1 /* MJRefreshConst.m in Sources */,
 				9D80BEFD1DC83288005B39F1 /* UIButton+WebCache.m in Sources */,
 				9D80BE7B1DC83287005B39F1 /* AFNetworkReachabilityManager.m in Sources */,
+				8796F8691DD5FF1200FD0D49 /* HSSongFreshViewController.m in Sources */,
 				9D80BEDF1DC83288005B39F1 /* MJRefreshAutoNormalFooter.m in Sources */,
 				9D80BF051DC83288005B39F1 /* SVProgressAnimatedView.m in Sources */,
 				9D80BE811DC83287005B39F1 /* README.md in Sources */,

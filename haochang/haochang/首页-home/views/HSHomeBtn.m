@@ -19,7 +19,7 @@
     self.imageView.xmg_x = 38;
 
     self.titleLabel.xmg_x = 44 + self.imageView.xmg_width;
-    self.titleLabel.xmg_y = 6;
+    self.titleLabel.xmg_y = 16;
     self.titleLabel.xmg_height = 30;
     self.titleLabel.numberOfLines = 0;
     

@@ -58,8 +58,10 @@
 +(UIImage *)hs_captureScreeWithCGRect:(CGRect)rect;
 
 
-
-
+/**
+ *  获取当前的nav
+ */
++(UINavigationController *)he_getCurrentNav;
 
 
 

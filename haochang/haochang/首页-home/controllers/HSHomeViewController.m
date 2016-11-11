@@ -10,7 +10,7 @@
 #import "HSHomeCollectionViewCell.h"
 #import "HSHomeHeaderView.h"
 #import "HSHomeCellModel.h"
-#define heraerViewHeight 200
+#define heraerViewHeight 250
 #define margin 10
 @interface HSHomeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 /** 主视图*/

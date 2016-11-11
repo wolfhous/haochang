@@ -195,6 +195,10 @@ static CGRect originalFrame;
     NSString *timeString = [NSString stringWithFormat:@"%.0f", a];
     return timeString;
 }
-
++(UINavigationController *)he_getCurrentNav{
+    UITabBarController *tabbarVc = (UITabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    UINavigationController *nav = tabbarVc.selectedViewController;
+    return nav;
+}
 
 @end

@@ -1,0 +1,115 @@
+//
+//  HSRegionViewController.m
+//  haochang
+//
+//  Created by 侯帅 on 2016/11/11.
+//  Copyright © 2016年 com.houshuai. All rights reserved.
+//
+
+#import "HSRegionViewController.h"
+#import "HSHomeCollectionViewCell.h"
+#import "HSHomeCellModel.h"
+#import "UIBarButtonItem+HSExtension.h"
+#import "HSRegionsViewController.h"
+#define margin 10
+@interface HSRegionViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,HSRegionsViewControllerDelegate>
+
+/** 主视图*/
+@property (nonatomic,strong)UICollectionView *collectionView;
+@property (nonatomic,strong)NSMutableArray *arrayHomeRegion;
+@end
+
+@implementation HSRegionViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.view.backgroundColor = HSRandomColor;
+    self.navigationItem.title = @"火星榜";
+    UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithTitle:@"地区排行" style:UIBarButtonItemStylePlain target:self action:@selector(clickRightItem)];
+    item.tintColor = [UIColor blackColor];
+    self.navigationItem.rightBarButtonItem = item;
+    [self.view addSubview:self.collectionview];
+    [self lodaHomeRegionDataWith_sign:nil withRankId:nil];
+}
+-(void)clickRightItem{
+    HSRegionsViewController *vc = [HSRegionsViewController new];
+    vc.delegate = self;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+-(void)lodaHomeRegionDataWith_sign:(NSString *)_sign withRankId:(NSString *)rankId{
+    HSparameters;
+//    parameters[@"_sign"] = @"8f4cc87b23a54e969eea3cbdcea7a9da";
+    parameters[@"rankId"] = rankId;
+    parameters[@"_time"] = [HSManager hs_getTime];
+    if (rankId == nil) {
+        parameters = nil;
+    }
+    [HSHttpRequest hs_getAPIName:API_HomeRegion parameters:parameters succes:^(id dic) {
+//        [dic writeToFile:@"/Users/houshuai/Desktop/plist/haochang/API_HomeRegion.plist" atomically:YES];
+        self.arrayHomeRegion = [HSHomeCellModel mj_objectArrayWithKeyValuesArray:dic[@"data"][@"songs"]];
+        [self.collectionView reloadData];
+    } error:^(id error) {
+        
+    }];
+}
+
+#pragma mark - HSRegionsViewControllerDelegate
+-(void)HSRegionsViewControllerDelegateSelectWithRankld:(NSString *)rankId withRankName:(NSString *)rankName{
+    self.navigationItem.title = rankName;
+    [self lodaHomeRegionDataWith_sign:nil withRankId:rankId];
+}
+
+#pragma mark - UICollectionViewDataSource
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return self.arrayHomeRegion.count;
+}
+
+- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    HSHomeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"homeCell" forIndexPath:indexPath];
+    cell.homeCellModel = self.arrayHomeRegion[indexPath.row];
+    return cell;
+}
+//每个item大小
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    CGFloat w = (SCREEN_WIDTH - margin * 3)/2;
+    CGFloat h = w * 1.1;
+    return indexPath.row == 0 ? CGSizeMake(SCREEN_WIDTH - margin *2, h + 30) : CGSizeMake(w, h);
+}
+//四周边距
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
+    return UIEdgeInsetsMake(margin , margin, margin + 46, margin);
+}
+//行间距 垂直间距
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section{
+    return margin;
+}
+//内边距 水平间距
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
+    return margin;
+}
+
+
+
+#pragma mark - 懒加载
+-(UICollectionView *)collectionview{
+    if (!_collectionView) {
+        UICollectionViewFlowLayout *collectionViewLayout = [UICollectionViewFlowLayout new];
+        collectionViewLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
+        _collectionView = [[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:collectionViewLayout];
+        _collectionView.delegate = self;
+        _collectionView.dataSource = self;
+//        _collectionView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
+        _collectionView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+        [_collectionView registerNib:[UINib nibWithNibName:@"HSHomeCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"homeCell"];
+    }
+    return _collectionView;
+}
+-(NSMutableArray *)arrayHomeRegion{
+    if (!_arrayHomeRegion) {
+        _arrayHomeRegion = [NSMutableArray array];
+    }
+    return _arrayHomeRegion;
+}
+
+
+@end

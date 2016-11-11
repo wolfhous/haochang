@@ -15,15 +15,15 @@
 #define API_Home @"http://api.haochang.tv/api/rank/nation?"
 //广告 yes
 #define API_HomeAD @"https://api.haochang.tv/api/boot"
-
-//地区榜单
-#define API_HomeRegion @"https://api.haochang.tv/api/rank/region?"
-//地区排行
+//地区榜单 yes
+#define API_HomeRegion @"https://api.haochang.tv/api/rank/region"
+//地区排行 yes
 #define API_HomeRegions @"https://api.haochang.tv/api/rank/regions?"
-//新歌
+//新歌 yes
 #define API_HomeSongFresh @"https://api.haochang.tv/api/song/fresh?"
 
-
+//地区说明网页
+#define API_HomeRegionWebView @"https://api.haochang.tv/rank/region/intro"
 
 
 

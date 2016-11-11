@@ -18,12 +18,13 @@
     [super viewDidLoad];
     //一句话添加侧滑返回功能
     self.navigationController.fd_fullscreenPopGestureRecognizer.enabled = YES;
+    self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor redColor],NSFontAttributeName:[UIFont fontWithName:@"Arial-BoldItalicMT" size:20.0]};
 }
 
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     
     if (self.childViewControllers.count > 0) {
-        UIBarButtonItem *backItem = [UIBarButtonItem itemWithImage:@"public_sing_back_13x24_" highImage:@"public_back_13x24_" target:self action:@selector(back)];
+        UIBarButtonItem *backItem = [UIBarButtonItem itemWithImage:@"public_back_13x24_" highImage:@"public_sing_back_13x24_" target:self action:@selector(back)];
         viewController.navigationItem.leftBarButtonItem = backItem;
         // 隐藏底部的工具条
 //        viewController.hidesBottomBarWhenPushed = YES;

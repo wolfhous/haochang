@@ -28,8 +28,12 @@
     
     
     [self.imageViewHeader sd_setImageWithURL:[NSURL URLWithString:homeCellModel.singer[@"avatar"][@"middle"]] placeholderImage:ImagePlaceholderBig];
-    
-    self.labelTitle.text = [NSString stringWithFormat:@"%@"@"%@"@"%@",homeCellModel.rank,@".",homeCellModel.title];
+    if (homeCellModel.rank == nil) {
+        self.labelTitle.text = homeCellModel.title;
+    }else{
+        self.labelTitle.text = [NSString stringWithFormat:@"%@"@"%@"@"%@",homeCellModel.rank,@".",homeCellModel.title];
+        
+    }
     
     self.labelNickName.text = homeCellModel.singer[@"nickname"];
     
