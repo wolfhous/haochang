@@ -1,19 +1,82 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HSHomeCollectionViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="205" height="192"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <rect key="frame" x="0.0" y="0.0" width="205" height="192"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oKg-VT-MQc">
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q5T-c1-b5S"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重庆重庆重庆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i58-n4-zcS">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="DjP-9Z-Qxb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重庆" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2my-hT-p7Q">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="fIh-w2-Oiy"/>
+                                    <constraint firstAttribute="width" constant="42" id="zmC-0L-RaL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重庆重庆重庆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDU-rf-hkh">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="nXT-A7-voE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="q5T-c1-b5S" secondAttribute="trailing" id="1q2-u1-t4m"/>
+                            <constraint firstAttribute="bottom" secondItem="2my-hT-p7Q" secondAttribute="bottom" constant="8" id="2Xm-6f-XnO"/>
+                            <constraint firstAttribute="trailing" secondItem="WDU-rf-hkh" secondAttribute="trailing" constant="10" id="4TQ-y3-300"/>
+                            <constraint firstAttribute="trailing" secondItem="2my-hT-p7Q" secondAttribute="trailing" constant="8" id="Xpz-yN-NsF"/>
+                            <constraint firstItem="q5T-c1-b5S" firstAttribute="height" secondItem="oKg-VT-MQc" secondAttribute="height" multiplier="0.75" id="fBg-Bh-COx"/>
+                            <constraint firstItem="2my-hT-p7Q" firstAttribute="leading" secondItem="i58-n4-zcS" secondAttribute="trailing" id="giV-a6-XuH"/>
+                            <constraint firstItem="i58-n4-zcS" firstAttribute="leading" secondItem="oKg-VT-MQc" secondAttribute="leading" constant="8" id="h2e-dQ-XEw"/>
+                            <constraint firstItem="WDU-rf-hkh" firstAttribute="leading" secondItem="oKg-VT-MQc" secondAttribute="leading" constant="8" id="l3z-vo-ADD"/>
+                            <constraint firstItem="WDU-rf-hkh" firstAttribute="top" secondItem="q5T-c1-b5S" secondAttribute="bottom" constant="6" id="r2j-TK-4rn"/>
+                            <constraint firstItem="q5T-c1-b5S" firstAttribute="leading" secondItem="oKg-VT-MQc" secondAttribute="leading" id="uam-zi-kZo"/>
+                            <constraint firstAttribute="bottom" secondItem="i58-n4-zcS" secondAttribute="bottom" constant="8" id="xt4-ZL-Ug0"/>
+                            <constraint firstItem="q5T-c1-b5S" firstAttribute="top" secondItem="oKg-VT-MQc" secondAttribute="top" id="yeY-6k-SeU"/>
+                        </constraints>
+                    </view>
+                </subviews>
             </view>
+            <constraints>
+                <constraint firstItem="oKg-VT-MQc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1B0-9L-0cw"/>
+                <constraint firstAttribute="trailing" secondItem="oKg-VT-MQc" secondAttribute="trailing" id="397-Ta-ShN"/>
+                <constraint firstAttribute="bottom" secondItem="oKg-VT-MQc" secondAttribute="bottom" id="BLm-uU-dVK"/>
+                <constraint firstItem="oKg-VT-MQc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GFY-V2-tlC"/>
+            </constraints>
+            <size key="customSize" width="205" height="192"/>
+            <connections>
+                <outlet property="imageViewHeader" destination="q5T-c1-b5S" id="5Fq-pb-ZGG"/>
+                <outlet property="labelCity" destination="2my-hT-p7Q" id="NSW-Gz-kYF"/>
+                <outlet property="labelNickName" destination="i58-n4-zcS" id="I3c-yz-9sY"/>
+                <outlet property="labelTitle" destination="WDU-rf-hkh" id="vEz-mY-QeO"/>
+            </connections>
+            <point key="canvasLocation" x="-74.5" y="73"/>
         </collectionViewCell>
     </objects>
 </document>

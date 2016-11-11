@@ -12,7 +12,32 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    self.backgroundColor = HSRandomColor;
+    self.layer.masksToBounds = YES;
+    self.layer.cornerRadius = 5;
 }
+
+
+-(void)setHomeCellModel:(HSHomeCellModel *)homeCellModel{
+    _homeCellModel = homeCellModel;
+    
+    if (homeCellModel.rank.integerValue == 1) {
+        self.imageViewHeader.contentMode = UIViewContentModeScaleAspectFill;
+    }else{
+        self.imageViewHeader.contentMode = UIViewContentModeScaleToFill;
+    }
+    
+    
+    [self.imageViewHeader sd_setImageWithURL:[NSURL URLWithString:homeCellModel.singer[@"avatar"][@"middle"]] placeholderImage:ImagePlaceholderBig];
+    
+    self.labelTitle.text = [NSString stringWithFormat:@"%@"@"%@"@"%@",homeCellModel.rank,@".",homeCellModel.title];
+    
+    self.labelNickName.text = homeCellModel.singer[@"nickname"];
+    
+    self.labelCity.text = homeCellModel.singer[@"location"][@"city"];
+    
+    
+    
+}
+
 
 @end

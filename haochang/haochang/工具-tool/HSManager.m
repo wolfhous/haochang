@@ -189,7 +189,12 @@ static CGRect originalFrame;
     UIGraphicsEndImageContext();
     return img;
 }
-
++(NSString *)hs_getTime{
+    NSDate* dat = [NSDate dateWithTimeIntervalSinceNow:0];
+    NSTimeInterval a=[dat timeIntervalSince1970];
+    NSString *timeString = [NSString stringWithFormat:@"%.0f", a];
+    return timeString;
+}
 
 
 @end

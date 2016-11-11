@@ -36,6 +36,28 @@
         [SVProgressHUD showErrorWithStatus:@"网络连接失败"];
     }];
 }
++(void)hs_getClearAPIName:(NSString *)apiName parameters:(NSMutableDictionary *)parameters succes:(void(^)(id dic))success error:(void(^)(id error))iserror{
+    DLog(@"\n【请求接口】\n%@\n【请求参数】\n%@",apiName,parameters);
+    //1创建AFHTTPSessionManager 请求管理集
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    //2设置超时时间
+    [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
+    manager.requestSerializer.timeoutInterval = 5;
+    [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];//顶栏状态转圈图形
+    //4开始请求
+    [manager GET:apiName parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];//顶栏状态转圈图形
+        //请求成功返回数据
+        success(responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];//顶栏状态转圈图形
+        //请求失败
+        iserror(error);
+    }];
+}
 +(void)hs_postClearAPIName:(NSString *)apiName parameters:(NSMutableDictionary *)parameters succes:(void(^)(id responseObject))success error:(void(^)(id error))iserror{
     DLog(@"\n【请求接口】\n%@\n【请求参数】\n%@",apiName,parameters);
     //1创建AFHTTPSessionManager 请求管理集

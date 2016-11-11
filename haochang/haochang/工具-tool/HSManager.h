@@ -40,8 +40,10 @@
 +(NSString *)hs_getTimeForDataStr:(NSString *)str;
 
 
-
-
+/**
+ *  获取时间戳
+ */
++(NSString *)hs_getTime;
 
 
 

@@ -17,6 +17,11 @@
 		9D48FA4A1DC9C7AA0000EFAD /* HSMeCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D48FA491DC9C7AA0000EFAD /* HSMeCellModel.m */; };
 		9D48FA4E1DC9E2B00000EFAD /* HSMeTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D48FA4C1DC9E2B00000EFAD /* HSMeTopCell.m */; };
 		9D48FA4F1DC9E2B00000EFAD /* HSMeTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D48FA4D1DC9E2B00000EFAD /* HSMeTopCell.xib */; };
+		9D5315691DD5619200FFAA20 /* HSHomeCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5315681DD5619200FFAA20 /* HSHomeCellModel.m */; };
+		9D53156C1DD5A11900FFAA20 /* HSHomeAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D53156B1DD5A11900FFAA20 /* HSHomeAdModel.m */; };
+		9D5315701DD5A46400FFAA20 /* home.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D53156E1DD5A46400FFAA20 /* home.plist */; };
+		9D5315711DD5A46400FFAA20 /* home_ad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D53156F1DD5A46400FFAA20 /* home_ad.plist */; };
+		9D5315741DD5A5DE00FFAA20 /* HSHomeBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5315731DD5A5DE00FFAA20 /* HSHomeBtn.m */; };
 		9D80BD131DC82F22005B39F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BD121DC82F22005B39F1 /* main.m */; };
 		9D80BD161DC82F22005B39F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D80BD151DC82F22005B39F1 /* AppDelegate.m */; };
 		9D80BD1E1DC82F22005B39F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D80BD1D1DC82F22005B39F1 /* Assets.xcassets */; };
@@ -204,6 +209,14 @@
 		9D48FA4B1DC9E2B00000EFAD /* HSMeTopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSMeTopCell.h; sourceTree = "<group>"; };
 		9D48FA4C1DC9E2B00000EFAD /* HSMeTopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSMeTopCell.m; sourceTree = "<group>"; };
 		9D48FA4D1DC9E2B00000EFAD /* HSMeTopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSMeTopCell.xib; sourceTree = "<group>"; };
+		9D5315671DD5619200FFAA20 /* HSHomeCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSHomeCellModel.h; sourceTree = "<group>"; };
+		9D5315681DD5619200FFAA20 /* HSHomeCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSHomeCellModel.m; sourceTree = "<group>"; };
+		9D53156A1DD5A11900FFAA20 /* HSHomeAdModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSHomeAdModel.h; sourceTree = "<group>"; };
+		9D53156B1DD5A11900FFAA20 /* HSHomeAdModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSHomeAdModel.m; sourceTree = "<group>"; };
+		9D53156E1DD5A46400FFAA20 /* home.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = home.plist; sourceTree = "<group>"; };
+		9D53156F1DD5A46400FFAA20 /* home_ad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = home_ad.plist; sourceTree = "<group>"; };
+		9D5315721DD5A5DE00FFAA20 /* HSHomeBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSHomeBtn.h; sourceTree = "<group>"; };
+		9D5315731DD5A5DE00FFAA20 /* HSHomeBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSHomeBtn.m; sourceTree = "<group>"; };
 		9D80BD0E1DC82F21005B39F1 /* haochang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = haochang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D80BD121DC82F22005B39F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9D80BD141DC82F22005B39F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -577,6 +590,15 @@
 			path = "主文件-main";
 			sourceTree = "<group>";
 		};
+		9D53156D1DD5A46400FFAA20 /* 数据-plist */ = {
+			isa = PBXGroup;
+			children = (
+				9D53156E1DD5A46400FFAA20 /* home.plist */,
+				9D53156F1DD5A46400FFAA20 /* home_ad.plist */,
+			);
+			path = "数据-plist";
+			sourceTree = "<group>";
+		};
 		9D80BD051DC82F21005B39F1 = {
 			isa = PBXGroup;
 			children = (
@@ -604,6 +626,7 @@
 				9D80BD2A1DC831ED005B39F1 /* 工具-tool */,
 				9D80BD2B1DC831ED005B39F1 /* 其他-other */,
 				9D80BD2C1DC831ED005B39F1 /* 三方库-lib */,
+				9D53156D1DD5A46400FFAA20 /* 数据-plist */,
 				9D80BD141DC82F22005B39F1 /* AppDelegate.h */,
 				9D80BD151DC82F22005B39F1 /* AppDelegate.m */,
 				9D80BF3C1DC83610005B39F1 /* PrefixHeader.pch */,
@@ -1271,6 +1294,10 @@
 		9D80BF0A1DC83464005B39F1 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				9D5315671DD5619200FFAA20 /* HSHomeCellModel.h */,
+				9D5315681DD5619200FFAA20 /* HSHomeCellModel.m */,
+				9D53156A1DD5A11900FFAA20 /* HSHomeAdModel.h */,
+				9D53156B1DD5A11900FFAA20 /* HSHomeAdModel.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -1285,6 +1312,8 @@
 				87D13E621DD4A8E900171ED3 /* HSHomeCollectionViewCell.xib */,
 				87D13E681DD4B47B00171ED3 /* HSHomeHeaderView.h */,
 				87D13E691DD4B47B00171ED3 /* HSHomeHeaderView.m */,
+				9D5315721DD5A5DE00FFAA20 /* HSHomeBtn.h */,
+				9D5315731DD5A5DE00FFAA20 /* HSHomeBtn.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -1400,12 +1429,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D5315711DD5A46400FFAA20 /* home_ad.plist in Resources */,
 				9D48FA4F1DC9E2B00000EFAD /* HSMeTopCell.xib in Resources */,
 				9D80BECE1DC83288005B39F1 /* Info.plist in Resources */,
 				9D80BD1E1DC82F22005B39F1 /* Assets.xcassets in Resources */,
 				9D80BEC11DC83288005B39F1 /* IQKeyboardManager.bundle in Resources */,
 				87D13E641DD4A8E900171ED3 /* HSHomeCollectionViewCell.xib in Resources */,
 				9D80BE801DC83287005B39F1 /* LICENSE in Resources */,
+				9D5315701DD5A46400FFAA20 /* home.plist in Resources */,
 				9D80BF061DC83288005B39F1 /* SVProgressHUD.bundle in Resources */,
 				9D80BEA21DC83287005B39F1 /* Info.plist in Resources */,
 				9D80BEC31DC83288005B39F1 /* Info.plist in Resources */,
@@ -1442,6 +1473,7 @@
 				9D80BEB31DC83287005B39F1 /* IQNSArray+Sort.m in Sources */,
 				9D80BECC1DC83288005B39F1 /* View+MASAdditions.m in Sources */,
 				9D80BE871DC83287005B39F1 /* UIImageView+AFNetworking.m in Sources */,
+				9D5315741DD5A5DE00FFAA20 /* HSHomeBtn.m in Sources */,
 				9D80BEE41DC83288005B39F1 /* MJRefreshGifHeader.m in Sources */,
 				9D80BEEA1DC83288005B39F1 /* UIScrollView+MJExtension.m in Sources */,
 				9D80BEE01DC83288005B39F1 /* MJRefreshAutoStateFooter.m in Sources */,
@@ -1475,6 +1507,7 @@
 				9D80BF161DC834AA005B39F1 /* Foundation+Log.m in Sources */,
 				9D80BED91DC83288005B39F1 /* MJRefreshAutoFooter.m in Sources */,
 				9D80BEBA1DC83287005B39F1 /* IQKeyboardReturnKeyHandler.m in Sources */,
+				9D53156C1DD5A11900FFAA20 /* HSHomeAdModel.m in Sources */,
 				9D80BF031DC83288005B39F1 /* UIView+WebCacheOperation.m in Sources */,
 				9D80BEA41DC83287005B39F1 /* MFMessageComposeViewController+BlocksKit.m in Sources */,
 				9D80BED71DC83288005B39F1 /* NSObject+MJProperty.m in Sources */,
@@ -1483,6 +1516,7 @@
 				9D80BF7F1DC883DD005B39F1 /* HSMeViewController.m in Sources */,
 				9D80BED51DC83288005B39F1 /* NSObject+MJCoding.m in Sources */,
 				9D80BE921DC83287005B39F1 /* NSMutableIndexSet+BlocksKit.m in Sources */,
+				9D5315691DD5619200FFAA20 /* HSHomeCellModel.m in Sources */,
 				9D80BEBC1DC83287005B39F1 /* IQBarButtonItem.m in Sources */,
 				9D48FA4E1DC9E2B00000EFAD /* HSMeTopCell.m in Sources */,
 				9D482CB31DD4705D00419D18 /* HSTabBar.m in Sources */,

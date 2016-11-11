@@ -48,6 +48,8 @@
 #import "APIHeader.h"
 //防止block块循环引用用weakSelf
 #define  WKSELF __unsafe_unretained typeof(self) weakSelf = self
+#define ImagePlaceholderMini [UIImage imageNamed:@"public_default_33x33_"]
+#define ImagePlaceholderBig [UIImage imageNamed:@"public_default_big_166x166_"]
 //获取屏幕 宽度、高度
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)

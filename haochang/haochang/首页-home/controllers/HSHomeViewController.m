@@ -9,12 +9,14 @@
 #import "HSHomeViewController.h"
 #import "HSHomeCollectionViewCell.h"
 #import "HSHomeHeaderView.h"
+#import "HSHomeCellModel.h"
 #define heraerViewHeight 200
 #define margin 10
 @interface HSHomeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 /** 主视图*/
 @property (nonatomic,strong)UICollectionView *collectionView;
 @property (nonatomic,strong)HSHomeHeaderView *headerView;
+@property (nonatomic,strong)NSMutableArray *arrayHome;
 @end
 
 @implementation HSHomeViewController
@@ -26,18 +28,20 @@
 }
 -(void)lodaHomeData{
     [HSHttpRequest hs_getAPIName:API_Home parameters:nil succes:^(id dic) {
-        DLog(@"%@",dic);
+        self.arrayHome = [HSHomeCellModel mj_objectArrayWithKeyValuesArray:dic[@"data"][@"songs"]];
+        [self.collectionView reloadData];
     } error:^(id error) {
         
     }];
 }
 #pragma mark - UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 20;
+    return self.arrayHome.count;
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     HSHomeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"homeCell" forIndexPath:indexPath];
+    cell.homeCellModel = self.arrayHome[indexPath.row];
     return cell;
 }
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
@@ -53,7 +57,8 @@
 //每个item大小
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     CGFloat w = (SCREEN_WIDTH - margin * 3)/2;
-    return indexPath.row == 0 ? CGSizeMake(SCREEN_WIDTH - margin *2, w * 1.2) : CGSizeMake(w, w *1.2);
+    CGFloat h = w * 1.1;
+    return indexPath.row == 0 ? CGSizeMake(SCREEN_WIDTH - margin *2, h + 30) : CGSizeMake(w, h);
 }
 //四周边距
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
@@ -102,7 +107,12 @@
 }
 
 
-
+-(NSMutableArray *)arrayHome{
+    if (!_arrayHome) {
+        _arrayHome = [NSMutableArray array];
+    }
+    return _arrayHome;
+}
 
 
 
