@@ -34,7 +34,7 @@
 }
 //=============导航栏相关 begin============
 -(void)setupNavBar{
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"public_comment_32x32_" highImage:@"public_comment_32x32_" target:self action:@selector(clickHomeNavBarLeftItem)];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"me_account_email_24x24_" highImage:@"me_account_email_24x24_" target:self action:@selector(clickHomeNavBarLeftItem)];
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:@"homepage_record_32x32_" highImage:@"homepage_record_32x32_" target:self action:@selector(clickHomeNavBarRightItem)];
     
     UIView *titleView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 200, 44)];
@@ -166,7 +166,7 @@
 -(NSArray *)titleArray{
     if (!_titleArray) {
         _titleArray = [NSArray array];
-        _titleArray = @[@"首页",@"发现",@"我的"];
+        _titleArray = @[@"国榜",@"发现",@"我的"];
     }
     return _titleArray;
 }

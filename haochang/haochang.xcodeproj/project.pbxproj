@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87D13E631DD4A8E900171ED3 /* HSHomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D13E611DD4A8E900171ED3 /* HSHomeCollectionViewCell.m */; };
+		87D13E641DD4A8E900171ED3 /* HSHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87D13E621DD4A8E900171ED3 /* HSHomeCollectionViewCell.xib */; };
+		87D13E6A1DD4B47B00171ED3 /* HSHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D13E691DD4B47B00171ED3 /* HSHomeHeaderView.m */; };
 		9D482CB11DD4705D00419D18 /* HSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D482CAA1DD4705D00419D18 /* HSMainViewController.m */; };
 		9D482CB21DD4705D00419D18 /* HSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D482CAC1DD4705D00419D18 /* HSNavigationController.m */; };
 		9D482CB31DD4705D00419D18 /* HSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D482CAE1DD4705D00419D18 /* HSTabBar.m */; };
@@ -182,6 +185,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		87D13E601DD4A8E900171ED3 /* HSHomeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSHomeCollectionViewCell.h; sourceTree = "<group>"; };
+		87D13E611DD4A8E900171ED3 /* HSHomeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSHomeCollectionViewCell.m; sourceTree = "<group>"; };
+		87D13E621DD4A8E900171ED3 /* HSHomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HSHomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		87D13E681DD4B47B00171ED3 /* HSHomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSHomeHeaderView.h; sourceTree = "<group>"; };
+		87D13E691DD4B47B00171ED3 /* HSHomeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSHomeHeaderView.m; sourceTree = "<group>"; };
 		9D482CA71DD4602A00419D18 /* APIHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIHeader.h; sourceTree = "<group>"; };
 		9D482CA91DD4705D00419D18 /* HSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSMainViewController.h; sourceTree = "<group>"; };
 		9D482CAA1DD4705D00419D18 /* HSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSMainViewController.m; sourceTree = "<group>"; };
@@ -1272,6 +1280,11 @@
 			children = (
 				9D80BF771DC87528005B39F1 /* HSHomeTitleBtn.h */,
 				9D80BF781DC87528005B39F1 /* HSHomeTitleBtn.m */,
+				87D13E601DD4A8E900171ED3 /* HSHomeCollectionViewCell.h */,
+				87D13E611DD4A8E900171ED3 /* HSHomeCollectionViewCell.m */,
+				87D13E621DD4A8E900171ED3 /* HSHomeCollectionViewCell.xib */,
+				87D13E681DD4B47B00171ED3 /* HSHomeHeaderView.h */,
+				87D13E691DD4B47B00171ED3 /* HSHomeHeaderView.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -1391,6 +1404,7 @@
 				9D80BECE1DC83288005B39F1 /* Info.plist in Resources */,
 				9D80BD1E1DC82F22005B39F1 /* Assets.xcassets in Resources */,
 				9D80BEC11DC83288005B39F1 /* IQKeyboardManager.bundle in Resources */,
+				87D13E641DD4A8E900171ED3 /* HSHomeCollectionViewCell.xib in Resources */,
 				9D80BE801DC83287005B39F1 /* LICENSE in Resources */,
 				9D80BF061DC83288005B39F1 /* SVProgressHUD.bundle in Resources */,
 				9D80BEA21DC83287005B39F1 /* Info.plist in Resources */,
@@ -1422,6 +1436,7 @@
 				9D80BE7A1DC83287005B39F1 /* AFHTTPSessionManager.m in Sources */,
 				9D80BEF71DC83288005B39F1 /* SDWebImageCompat.m in Sources */,
 				9D80BE8A1DC83287005B39F1 /* UIWebView+AFNetworking.m in Sources */,
+				87D13E631DD4A8E900171ED3 /* HSHomeCollectionViewCell.m in Sources */,
 				9D80BEF51DC83288005B39F1 /* NSData+ImageContentType.m in Sources */,
 				9D80BE8C1DC83287005B39F1 /* NSDictionary+BlocksKit.m in Sources */,
 				9D80BEB31DC83287005B39F1 /* IQNSArray+Sort.m in Sources */,
@@ -1566,6 +1581,7 @@
 				9D80BE931DC83287005B39F1 /* NSMutableOrderedSet+BlocksKit.m in Sources */,
 				9D80BEE61DC83288005B39F1 /* MJRefreshStateHeader.m in Sources */,
 				9D80BF2E1DC834D2005B39F1 /* UIImageView+HSRound.m in Sources */,
+				87D13E6A1DD4B47B00171ED3 /* HSHomeHeaderView.m in Sources */,
 				9D80BEF41DC83288005B39F1 /* MKAnnotationView+WebCache.m in Sources */,
 				9D80BE981DC83287005B39F1 /* NSObject+BKBlockObservation.m in Sources */,
 				9D80BE991DC83287005B39F1 /* NSOrderedSet+BlocksKit.m in Sources */,
