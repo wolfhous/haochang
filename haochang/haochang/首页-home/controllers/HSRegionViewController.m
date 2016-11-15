@@ -38,7 +38,7 @@
 }
 -(void)lodaHomeRegionDataWith_sign:(NSString *)_sign withRankId:(NSString *)rankId{
     HSparameters;
-//    parameters[@"_sign"] = @"8f4cc87b23a54e969eea3cbdcea7a9da";
+    parameters[@"_sign"] = @"8f4cc87b23a54e969eea3cbdcea7a9da";
     parameters[@"rankId"] = rankId;
     parameters[@"_time"] = [HSManager hs_getTime];
     if (rankId == nil) {

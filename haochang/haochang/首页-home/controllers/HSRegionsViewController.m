@@ -9,6 +9,7 @@
 #import "HSRegionsViewController.h"
 #import "HSRegionsCell.h"
 #import "HSHomeRegionsModel.h"
+#import "HSWebViewController.h"
 @interface HSRegionsViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong)UITableView *tableView;
 @property (nonatomic,strong)NSMutableArray *arrayRegions;
@@ -25,7 +26,8 @@
     [self loadRegionsData];
 }
 -(void)clickRightItem{
-    
+    HSWebViewController *vc = [[HSWebViewController alloc]initWithUrlString:API_HomeRegionWebView];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark - 加载数据
 -(void)loadRegionsData{

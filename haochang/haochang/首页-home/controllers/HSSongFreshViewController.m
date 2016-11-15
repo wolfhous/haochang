@@ -28,7 +28,7 @@
 }
 -(void)lodaHomeRegionData{
     [HSHttpRequest hs_getAPIName:API_HomeSongFresh parameters:nil succes:^(id dic) {
-                [dic writeToFile:@"/Users/houshuai/Desktop/plist/haochang/API_HomeSongFresh.plist" atomically:YES];
+//                [dic writeToFile:@"/Users/houshuai/Desktop/plist/haochang/API_HomeSongFresh.plist" atomically:YES];
         self.arraySongFresh = [HSHomeCellModel mj_objectArrayWithKeyValuesArray:dic[@"data"][@"songs"]];
         [self.collectionView reloadData];
     } error:^(id error) {

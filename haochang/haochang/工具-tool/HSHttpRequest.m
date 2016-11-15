@@ -20,6 +20,7 @@
     [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
     //3设置提示
     [SVProgressHUD show];
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];//顶栏状态转圈图形
     //4开始请求
     [manager GET:apiName parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
